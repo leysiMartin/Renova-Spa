@@ -1,0 +1,9 @@
+/*$("body").on("click","#crearUusario",function(){
+		$.ajax({
+			url:"crearUsuario.php",
+			success:function(rspta){
+				$("#conPrincipal").html(rspta);
+			}
+		});
+	});
+*/
