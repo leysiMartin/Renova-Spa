@@ -1,14 +1,21 @@
 <?php
+/**
+ * Se verifica que los parametros solicitados existan o que un campo no este vacio
+ */
 	if(isset($_POST['cMedica'])){
 		
 		if (!empty($_POST['cMedica'])) {
 
 			require_once('general.class.php');
 			$funcion = new seleccion;
-			// se almacenan en variables los campos del archivo "altaTecnico.php"
+			/**
+			 * se almacenan en variables los campos del archivo correspondiente
+			 */
 			$cMedica = htmlentities($_POST['cMedica']);
 			
-			// se compara el email para saber si existe, en daod caso de que no se crea al nuevo tecnico s
+			/**
+			  * se compara la circunstancia medica para saber si en realidad existe, si es asi crea dicha entidad sino marca un error
+			  */ 
 			$busqueda=$funcion->buscarCMedicas($cMedica);
 			if (mysql_num_rows($busqueda)>0) {
 					echo '<script language="javascript">alert("Ya Existe Una Circunstancia medica con este nombre, Por Favor Intenta De Nuveo");</script>';

@@ -1,4 +1,9 @@
 <?php
+/**
+ * Se llama el archivo "general.class.php" para poder usar las funciones correspondientes a utilizar
+ * @param $objeto es la nueva variable contenedora de la nueva seleccion 
+ * @param $contenido obtiene el valor de la funcion verCMedicas()
+ */
 require_once("general.class.php");	
 $objeto = new Seleccion;
 $contenido=$objeto->verTratamientos();
@@ -21,6 +26,9 @@ $contenido=$objeto->verTratamientos();
 					
 				</tr>
 			<?php
+			/**
+			 * @param la variable $res es la encargada de distribuir en la tabla correspondiente los valores que se obtengan en la variable $contenido, con la ayuda de la funcion propia de PHP "mysql_fetch_array"
+			 */
 				 while($res = mysql_fetch_array($contenido))
 				 {
 			?>

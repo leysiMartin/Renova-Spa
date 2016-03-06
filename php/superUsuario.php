@@ -36,7 +36,7 @@
 			  	<a href="cMedicas.php"><label for="" id="clientes">Circunstancias medicas</label></a>
 			  </div>
 			  <div class="col-md-4">
-			  	<a href="tratamientos.php"><label for="" id="opiniones">Tatamientos</label></a> 
+			  	<a href="tratamientos.php"><label for="" id="opiniones">Tratamientos</label></a> 
 			  </div>
 			</div>
       <div class="form-group">

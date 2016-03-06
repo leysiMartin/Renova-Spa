@@ -1,12 +1,26 @@
 <?php
+/** 
+	* Un ejemplo de clase * 
+	* Colocaremos la clase vacia para el ejemplo * 
+	*  @package renovaSpa
+	*  @subpackage php 
+	*  @author Gonzalez Cauich Omar Alejandro < omargonzalez9911@yahoo.com> 
+	* */
 class bd{
-	//variables
+	/**
+	 * $baseDatos almacena la base de datos que se usara
+	 * $servidor almaena el valor de nuestro servidor
+	 * $usuario indica el usuario que tiene derecho a acceder a esa base de datos
+	 * $contrasena contiene el valor de la contrasena del usuario
+	 */
 	var $conexion;
 	var $baseDatos;
 	var $servidor;
 	var $usuario;
 	var $contrasena;
-	//funcion para asignarle a las variables los datos para la conexion a la bd
+	/**
+	  * funcion para asignarle a las variables los datos para la conexion a la bd
+	  */ 
 	function bd(){
 		$this->baseDatos="spa";
 		$this->servidor="localhost";
@@ -14,7 +28,10 @@ class bd{
 		$this->contrasena="";
  
 	}
-	//funcion para los posibles errores al conectarse a la bd
+	/** 
+	* la división de dos numeros 
+ 	* @param $conex almacena la conexion a la base de datos 
+ 	*/
 	function conectar(){
 		if (!($conex=@mysql_connect($this->servidor,$this->usuario,$this->contrasena))) {
 			echo"<h1> [:(] Error al conectar a la base de datos</h1>";	

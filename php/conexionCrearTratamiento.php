@@ -1,14 +1,21 @@
 <?php
+/**
+ * Se verifica que los parametros solicitados existan o que un campo no este vacio
+ */
 	if(isset($_POST['tratamiento'])){
 		
 		if (!empty($_POST['tratamiento'])) {
 
 			require_once('general.class.php');
 			$funcion = new seleccion;
-			// se almacenan en variables los campos del archivo "altaTecnico.php"
+			/**
+			 * se almacenan en variables los campos del archivo correspondiente
+			 */
 			$nombre = htmlentities($_POST['tratamiento']);
 			
-			// se compara el email para saber si existe, en daod caso de que no se crea al nuevo tecnico s
+			/**
+			  * se compara el email para saber si existe, en daod caso de que no se crea al nuevo registro
+			  */ 
 			$busqueda=$funcion->buscarTratamiento($nombre);
 			if (mysql_num_rows($busqueda)>0) {
 					echo '<script language="javascript">alert("Ya Existe Un Tratamiento con este nombre, Por Favor Intenta De Nuveo");</script>';

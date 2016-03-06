@@ -1,14 +1,21 @@
 <?php
+/**
+ * Se verifica que los parametros solicitados existan o que un campo no este vacio
+ */
 	if(isset($_POST['id'])){
 		
 		if (!empty($_POST['id'])) {
 
 			require_once('general.class.php');
 			$funciones = new seleccion;
-			// se almacenan en variables los campos del archivo "altaTecnico.php"
+			/**
+			 * se almacenan en variables los campos del archivo correspondiente
+			 */
 			$id = htmlentities($_POST['id']);
 			
-			// se compara el email para saber si existe, en daod caso de que no se crea al nuevo tecnico s
+			/**
+			  * se compara el email para saber si existe, en daod caso de que no se elimina dicho valor
+			  */ 
 			$busqueda=$funciones->buscarIdTerapeuta($id);
 			if (mysql_num_rows($busqueda)<0) {
 					echo '<script language="javascript">alert("No existe ningun id con dicho valor");</script>';

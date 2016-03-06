@@ -1,7 +1,10 @@
 <?php
 require_once("general.class.php");  
 $objeto = new Seleccion;
+$objeto2 = new Seleccion;
+$paises=$objeto2->verPaises();
 $terapeutas=$objeto->verTerapeutas();  
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -92,6 +95,7 @@ $terapeutas=$objeto->verTerapeutas();
                 <label>Seleccione su pais:</label>
                 <br>
                   <select name="pais" id="">
+                 
                     <option value="1">Mexico</option>
                     <option value="2">E.U.A</option>
                     <option value="3">Spain</option>
@@ -193,13 +197,26 @@ $terapeutas=$objeto->verTerapeutas();
             </div>
           </div>
           <label for="">Por favor, regalenos su opinion acerca de la sesion que acaba de tomar:</label>
-              <textarea class="form-control"> </textarea>
+              <textarea class="form-control" name="opinion"> </textarea>
               <br>
+              <br>
+          <div class="row">
+            <div class="col-md-4">
+
+            </div>
+            <div class="col-md-4">
+              <img src="../img/firma.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+
+            </div>
+          </div>
         <div class="form-group">
           <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
         </div>
       </form>
     </div>
+  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
