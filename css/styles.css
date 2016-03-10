@@ -6,7 +6,7 @@
 	text-align: center;
 }
 *{
-	background-color: #fff;
+	background-color: #F7D358;
 }
 #titulo{
 	text-align: center;
@@ -22,8 +22,17 @@ h2{
 	
 }
 section{
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 250px;
 	position: relative;;
 	margin: auto;
+}
+
+body{
+	position: center;
+}
+
+div{
+	position: center;
+
 }

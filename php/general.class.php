@@ -2,9 +2,9 @@
 /** * incluye todo lo que esta en el archivo conexion.php */
 include_once("conexion.php");
 /** 
-* @package renovaSpa 
+* @package renova Spa 
 * @subpackage php 
-* @author Gonzalez Cauich Omar Alejandro < omargonzalez9911@yahoo.com>
+* @author leysimartin>
 */ 
 
 class Seleccion
@@ -24,7 +24,7 @@ class Seleccion
 	 function sesionUsuario($usuario,$password){	 			
 	    if ($this->con->conectar()==true){
 	 	    
-	 	    $sql="SELECT password, email FROM superusuario WHERE email ='".$usuario."' AND password='".$password."'";
+	 	    $sql="SELECT password, email FROM superusuario WHERE email ='".$usuario." AND '  password='".$password."'";
 	 		return $select=mysql_query($sql);
 	 	}
 	 }

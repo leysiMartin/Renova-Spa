@@ -40,7 +40,7 @@
 	<div class="conteiner">
 		<div class="modal-header">
 			<div class="form-group">
-				<label for="" >Bienvenida Recepcionista :3 Favor de entrar al siguiente enlace para acceder al cuestionario para el cliente</label>
+				<label for="" >Favor de entrar al siguiente enlace para acceder al cuestionario para el cliente</label>
 				<br>
 				<a href="cuestionario.php">Ir a Cuestionario</a>
 			</div>

@@ -1,9 +1,9 @@
 <?php
-require_once("general.class.php");  
+require_once("general.class.php");
 $objeto = new Seleccion;
 $objeto2 = new Seleccion;
 $paises=$objeto2->verPaises();
-$terapeutas=$objeto->verTerapeutas();  
+$terapeutas=$objeto->verTerapeutas();
 
 ?>
 <!DOCTYPE html>
@@ -45,10 +45,10 @@ $terapeutas=$objeto->verTerapeutas();
       <div class="form-group">
         <label for="">1. El masaje o tratamiento que usted va a recibir tiene el próposito básico derelajación
         y el alivio de ka tensión muscular seperficial.</label>
-        <label for="">2. Si usted está insatisfecho con el servicio, o experimenta cualquier tipo de molestia o 
+        <label for="">2. Si usted está insatisfecho con el servicio, o experimenta cualquier tipo de molestia o
         dolor durante la    sesión, informe por favor al terapeuta cuanto antes.</label>
         <label for="">3. Si no se menciona nada durante la sesión, asumiremos que no ha habido ningún problema.</label>
-        <label for="">4. Cualquier insinuación, hecho o propuesta de caracter sexual ocasionara el fiinmediato de la 
+        <label for="">4. Cualquier insinuación, hecho o propuesta de caracter sexual ocasionara el fiinmediato de la
         sesión y él/la huésped sera obligado al pago completo del servicio.</label>
         <label for="">5. Por la seguridad de sus valores, le sugerimos dejarlos en la caja fuerte dehabitación.
         Renova spa no asumirá ninguna responsabilidad por robo o extravío de valores. </label>
@@ -95,7 +95,7 @@ $terapeutas=$objeto->verTerapeutas();
                 <label>Seleccione su pais:</label>
                 <br>
                   <select name="pais" id="">
-                 
+
                     <option value="1">Mexico</option>
                     <option value="2">E.U.A</option>
                     <option value="3">Spain</option>
@@ -124,10 +124,10 @@ $terapeutas=$objeto->verTerapeutas();
               <div class="form-group">
               <label>Favor De Seleccionar Tu Hotel:</label>
                <select name="hotel" id="">
-                 <option value="1">Royal Palace</option>
-                 <option value="2">Blue Bay</option>
-                 <option value="3">Princess</option>
-                 <option value="4">Holiday Xpress</option>
+                 <option value="1">Paladium</option>
+                 <option value="2">Vidanta</option>
+                 <option value="3">Iberostar</option>
+                 <option value="4">Coral</option>
                </select>
               </div>
             </div>
@@ -143,10 +143,10 @@ $terapeutas=$objeto->verTerapeutas();
               <div class="form-group">
                 <label>Favor De Seleccionar Tu Agencia:</label>
                 <select name="agencia" id="">
-                  <option value="1">Vacaciones Baratas</option>
-                  <option value="2">Viva Areobus</option>
-                  <option value="3">ADO</option>
-                  <option value="4">Vive Feliz</option>
+                  <option value="1">ADO</option>
+                  <option value="2">Mayab</option>
+                  <option value="3">Best Day</option>
+                  <option value="4">Altournative</option>
                 </select>
               </div>
             </div>
@@ -158,8 +158,8 @@ $terapeutas=$objeto->verTerapeutas();
                   <select name="tratamiento" id="">
                     <option value="1">Espalda Dorsal</option>
                     <option value="2">Masaje</option>
-                    <option value="3">Cancer</option>
-                    <option value="4">Problemas En La Rodilla</option>
+                    <option value="3">Terapia China</option>
+                    <option value="4">Facial</option>
                   </select>
               </div>
             </div>
@@ -167,13 +167,13 @@ $terapeutas=$objeto->verTerapeutas();
               <div class="form-group">
                 <label for="">Selecciona El Nombre De Tu Terapeuta:</label>
                   <select name="terapeuta" id="">
-                  
-                    <option value="1">Isabel</option>
-                    <option value="2">Emanuel</option>
-                    <option value="3">Alfredo</option>
-                    <option value="4">Diana</option>
+
+                    <option value="1">Alberto</option>
+                    <option value="2">lucia</option>
+                    <option value="3">Alex</option>
+                    <option value="4">Denia</option>
                   </select>
-                 
+
               </div>
             </div>
             <div class="col-md-4">
@@ -216,7 +216,7 @@ $terapeutas=$objeto->verTerapeutas();
         </div>
       </form>
     </div>
-  
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
